@@ -1,2 +1,2 @@
 # golang-patterns
-Golang design patterns
+Golang design patterns.
