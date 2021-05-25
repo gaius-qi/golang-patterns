@@ -39,7 +39,6 @@ func Permissions(perms os.FileMode) Option {
 }
 
 func New(filepath string, setters ...Option) error {
-	// Default Options
 	args := &Options{
 		UID:         os.Getuid(),
 		GID:         os.Getgid(),
