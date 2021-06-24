@@ -352,7 +352,6 @@ func (cb *CircuitBreaker) setState(state State, now time.Time) {
 	cb.state = state
 
 	cb.toNewGeneration(now)
-
 	if cb.onStateChange != nil {
 		cb.onStateChange(cb.name, prev, state)
 	}
