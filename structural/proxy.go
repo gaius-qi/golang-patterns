@@ -52,11 +52,11 @@ func (gt *GopherTerminal) Execute(cmd string) (resp string, err error) {
 	// Execute some asked commands if we know them
 	switch cmd {
 	case "say_hi":
-		resp = fmt.Sprintf("%s Hi %s", prefix, gt.User)
+		resp = fmt.Sprintf("%s hi %s", prefix, gt.User)
 	case "man":
-		resp = fmt.Sprintf("%s Visit 'https://golang.org/doc/' for Golang documentation", prefix)
+		resp = fmt.Sprintf("%s visit 'https://golang.org/doc/' for Golang documentation", prefix)
 	default:
-		err = fmt.Errorf("%s Unknown command", prefix)
+		err = fmt.Errorf("%s unknown command", prefix)
 	}
 
 	return
